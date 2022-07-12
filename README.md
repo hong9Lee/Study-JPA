@@ -36,7 +36,7 @@ if (orderSearch.getOrderStatus() != null) {
 }
 ```
 
-- Criteria를 통한 쿼리 ( 컴파일 단계에서 쿼리 오류 체크가 가능해 동적 쿼리를 안전하게 생성할 수 있다. )
+- Criteria를 통한 쿼리 ( 컴파일 단계에서 쿼리 오류 체크가 가능해 동적 쿼리를 안전하게 생성할 수 있다. 하지만 소스가 한눈에 안들어오고 너무 복잡하여 향후 QueryDSL 학습 필요 )
 ```
 CriteriaBuilder cb = em.getCriteriaBuilder();
 CriteriaQuery<Order> cq = cb.createQuery(Order.class);
